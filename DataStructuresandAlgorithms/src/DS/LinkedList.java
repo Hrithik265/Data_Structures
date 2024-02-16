@@ -19,10 +19,11 @@ public class LinkedList
         
         Node(String data){
             this.data = data;
-//            this.next = next;
+            this.next = next;
         }
     }
     
+    //Adding value in first
     public void addFirst(String data){
         Node newNode = new Node(data);
         size++;
@@ -35,6 +36,7 @@ public class LinkedList
         head = newNode;
     }
     
+    //Deleting first node
     public void deleteFirst(){
         if(head==null){
             System.out.println("List is empty");
@@ -128,6 +130,7 @@ public class LinkedList
         
         System.out.println("NULL");
     }
+    
 	public static void main(String[] args) {
 		LinkedList list = new LinkedList();
 		
